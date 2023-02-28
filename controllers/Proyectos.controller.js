@@ -78,7 +78,7 @@ const putProyectos = async (req, res) => {
     Empresa,
     Usuario,
    } = req.body
-   //Constante update donde se guardas los datos actulizados
+   //Constante update donde se guardas los datos actualizados
    const update = {}
 
    //Si existe este campo lo actualizaremos 

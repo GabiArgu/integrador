@@ -29,5 +29,16 @@ export const DELETE_POST = 'DELETE_POST'
 export const ADD_POST = 'ADD_POST' 
 export const ADD_COMMENT = 'ADD_COMMENT'
 export const REMOVE_COMMENT = 'REMOVE_COMMENT'
+export const GET_ANUNCIOS = 'GET_ANUNCIOS'
+export const GET_ANUNCIO = 'GET_ANUNCIO'
+export const ADD_ANUNCIO = 'ADD_ANUNCIO' 
+export const DELETE_ANUNCIO = 'DELETE_ANUNCIO'
+export const CLEAR_ANUNCIOS = 'CLEAR_ANUNCIOS'
+export const ANUNCIOS_ERROR = 'ANUNCIOS_ERROR'
+
+
+
+
+
 //Asignamos constantes las cuales van a especificar el tipo de accion a realizar 
  

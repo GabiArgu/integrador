@@ -14,7 +14,8 @@ router.post('/',
 [
 check('name', '-el nombre es requerido-').not().isEmpty(),
 check('password', '-el password debe ser de un minimo de 6 caracteres-').isLength({min:6}),
-check('email', '-debe incluir un email valido-').isEmail()  
+check('email', '-debe incluir un email valido-').isEmail(), 
+check('rol', '-el rol es requerido-').not().isEmpty(),
 ],
 registerUser
 )

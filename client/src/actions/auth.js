@@ -7,7 +7,7 @@ import setAuthToken from '../utils/setAuthToken'
 
 
 //REGISTER USER
-export const register = ({ name, email, password }) => async dispatch => {
+export const register = ({ name, email, password,rol }) => async dispatch => {
     
     const config = {
         headers: {
@@ -15,7 +15,7 @@ export const register = ({ name, email, password }) => async dispatch => {
         }
     }
 
-    const body = JSON.stringify({name, email, password})
+    const body = JSON.stringify({name, email, password,rol})
 
     console.info('body=>',body)
 

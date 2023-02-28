@@ -4,6 +4,7 @@ import auth from './auth'
 import profile from './profile'
 import post from './post'
 import proyecto from './proyecto'
+import anuncio from './anuncio'
 
 
 export default combineReducers({
@@ -11,6 +12,7 @@ export default combineReducers({
     auth,
     profile,
     post,
-    proyecto
+    proyecto,
+    anuncio
 })
 //En este archivo unimos en una sola funcion reductora todos mis reducers creados mediante combineReducers

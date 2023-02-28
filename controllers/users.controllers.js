@@ -45,9 +45,9 @@ ctrlUsers.registerUser = async (req, res) => {
     
     console.log(req.body)
     
-    const {name, email, password } = req.body
+    const {name, email, password,rol,} = req.body
 
-    console.log('incoming data=>', name, email, password)
+    console.log('incoming data=>', name, email, password,rol)
 
     const errors = validationResult(req)
 
@@ -75,7 +75,8 @@ ctrlUsers.registerUser = async (req, res) => {
             name, 
             email,
             avatar,
-            password
+            password,
+            rol,
         })
 
          //encrypt passw

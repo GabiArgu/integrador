@@ -13,21 +13,25 @@ const Register = ({setAlert, register, isAuthenticated}) => {
         name: "",
         email: "",
         password: "",
-        passwordDos: ""
+        passwordDos: "",
+        rol:""
     })
 
-    const {name, email, password, passwordDos} = formData
+    const {name, email, password, passwordDos,rol} = formData
 
     const handleChange = e => setFormData({...formData, [e.target.name] : e.target.value})
 
     const handleOnSubmit = async (e) => { 
         e.preventDefault()
-
         if(password !== passwordDos){
             //console.log('las contraseñas no coinciden')
             setAlert('las contraseñas no coinciden','danger')
+        }
+        
+        if(rol==""){
+            setAlert('El rol es requerido','danger')
         }else{
-            register({name, email, password})
+            register({name, email, password,rol})
             //console.log('success')
         }
     }
@@ -127,6 +131,16 @@ const Register = ({setAlert, register, isAuthenticated}) => {
                             reingresa la contraseña   
                         </small>
                     </p>
+                </div>
+                <div className="my-1 centeredColumn">
+                <select name="rol" value={rol} onChange={(e)=>handleChange(e)}>
+                        <option value="0">* Seleccione su Rol</option>
+                        <option value="Alumno">Alumno</option>
+                        <option value="Profesor">Profesor</option>
+                        <option value="Preceptor">Preceptor</option>
+                       
+                    </select>
+
                 </div>
                 
                 {/* <div className="my-1 centeredColumn"> */}

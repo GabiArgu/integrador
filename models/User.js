@@ -5,6 +5,9 @@ const UserSchema = new mongoose.Schema({
         type: String,
         required: true
     },
+    rol: { type: String,
+           require:true
+      },
     email: {
         type: String,
         required: true,

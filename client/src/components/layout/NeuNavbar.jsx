@@ -10,9 +10,9 @@ const NeuNavbar = ({
    const authLinks = (
       <ul className="navbar-nav mb-2  ml-auto">
           <li className="nav-item active">   
-            <Link className="nav-link" to="/feeds">
+            <Link className="nav-link" to="/anuncios">
             <i className="fas fa-graduation-cap dark-icon"></i>
-               Publicaciones
+              Anuncios
             </Link>
          </li>
           <li className="nav-item active">   

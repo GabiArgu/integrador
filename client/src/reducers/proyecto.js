@@ -23,7 +23,7 @@ export default function(state = initialState, action){
                 proyectos: payload,
                 //Asignamos el contenido de nuestro payload a proyectos
                 loading: false
-                //una ve obtenidos los datos la carga termina
+                //una vez obtenidos los datos la carga termina
             }   
             case GET_PROYECTO:
                 return {

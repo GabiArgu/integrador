@@ -31,7 +31,9 @@ const authRoutes = require('./routes/api/auth')
 const profileRoutes = require('./routes/api/profile')
 const postsRoutes = require('./routes/api/posts')
 const proyectosRoutes = require('./routes/api/proyectos.routes')
-const comunidadesRoutes = require('./routes/api/comunidades.routes')
+const anunciosRoutes = require('./routes/api/anuncios.routes')
+
+
 //Importamos las diversas rutas 
 
 
@@ -53,7 +55,8 @@ app.use('/api/posts', postsRoutes)
 app.use('/api/auth',  authRoutes)
 app.use('/api/profile', profileRoutes)
 app.use('/api/proyectos',proyectosRoutes)
-app.use('/api/comunidades',comunidadesRoutes)
+app.use('/api/anuncios',anunciosRoutes)
+
 
 
 //asignamos el puerto en donde se iniciara el servidor

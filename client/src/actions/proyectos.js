@@ -7,7 +7,7 @@ export const getProyectos = () => async dispatch => {
     try {
         const res = await axios.get('/back/api/proyectos')
         //Realizamos la peticion get al back de proyectos  con axios(realiza peticiones http)
-
+        console.log(res)
         dispatch({
             type: GET_PROYECTOS,
             payload: res.data.encontrados
